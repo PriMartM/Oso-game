@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="🐻 Osito Runner — Un divertido juego estilo Dino Chrome pero kawaii. Salta, esquiva obstáculos y alcanza tu mejor récord." />
+  <title>Osito Runner</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="brand">
+      <h1>🐻 Mi osito runner</h1>
+    </header>
+
+    <main class="game-shell" role="main">
+      
+      <div id="hud" class="hud" aria-live="polite">
+        <div>Puntos: <span id="score">0</span></div>
+        <div>Récord: <span id="highScore">0</span></div>
+      </div>
+
+      
+      <canvas id="game" aria-label="Juego Osito Runner" role="img"></canvas>
+
+      
+      <div id="overlay" class="overlay" hidden>
+        <div class="overlay-card" role="dialog" aria-labelledby="gameOverTitle" aria-describedby="gameOverDesc">
+          <h2 id="gameOverTitle">¡Ay no! El osito tropezó 🥺</h2>
+          <p id="gameOverDesc">Pulsa <strong>R</strong> para reiniciar o toca el botón.</p>
+          <button id="btnRestart" class="btn primary">Reiniciar</button>
+        </div>
+      </div>
+
+      
+      <div class="touch-controls" aria-hidden="false">
+        <button id="btnJump" class="btn ghost" aria-label="Saltar">↑</button>
+        <button id="btnDuck" class="btn ghost" aria-label="Agacharse">↓</button>
+      </div>
+    </main>
+
+    <footer class="tips">
+      <p>
+        <kbd>Espacio</kbd> o <kbd>↑</kbd> para saltar · 
+        <kbd>↓</kbd> para agacharte · 
+        <kbd>R</kbd> para reiniciar · 
+        <kbd>P</kbd> para pausar
+      </p>
+    </footer>
+  </div>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
