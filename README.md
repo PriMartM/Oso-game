@@ -4,6 +4,8 @@ Un juego estilo *Chrome Dino* pero mucho más **adorable** ✨.
 Controla a un osito marrón adorable 🐻 que debe esquivar troncos, nubes y ¡hasta abejas voladoras 🐝!  
 Salta, agáchate y trata de batir tu propio récord.
 
+![preview](osogame.png)
+
 ---
 
 ## 🎮 Características
